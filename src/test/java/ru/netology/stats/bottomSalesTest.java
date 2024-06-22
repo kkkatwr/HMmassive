@@ -5,7 +5,8 @@ package ru.netology.stats;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class bottomSalesTest {
+public class
+bottomSalesTest {
     @Test
     public void test() {
         bottomSales service = new bottomSales();
