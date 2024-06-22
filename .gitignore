@@ -9,6 +9,7 @@ target/
 .idea/libraries/
 *.iws
 *.iml
+.idea/
 *.ipr
 ### Eclipse ###
 .apt_generated
@@ -18,7 +19,6 @@ target/
 .settings
 .springBeans
 .sts4-cache
-
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
