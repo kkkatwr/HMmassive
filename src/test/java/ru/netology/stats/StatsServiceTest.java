@@ -12,7 +12,7 @@ public class StatsServiceTest {
         StatsService service = new StatsService();
         int expected = 180;
         int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int actuall = service.summOfAllSales(sales);
+        long actuall = service.summOfAllSales(sales);
         Assertions.assertEquals(expected, actuall);
 
     }
@@ -23,7 +23,7 @@ public class StatsServiceTest {
         StatsService service = new StatsService();
         int expected = 15;
         int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int actuall = service.averageSumm(sales);
+        long actuall = service.averageSumm(sales);
         Assertions.assertEquals(expected, actuall);
     }
 

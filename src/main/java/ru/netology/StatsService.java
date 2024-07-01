@@ -1,16 +1,16 @@
 package ru.netology;
 
 public class StatsService {
-    public int summOfAllSales(int[] sales) {
-        int summSales = 0;
+    public long summOfAllSales(int[] sales) {
+        long summSales = 0;
         for (int i = 0; i < sales.length; i++) {
             summSales = summSales + sales[i];
         }
         return summSales;
     }
 
-    public int averageSumm(int[] sales) {
-        int totalSumm = 0;
+    public long averageSumm(int[] sales) {
+        long totalSumm = 0;
         for (int i = 0; i < sales.length; i++) {
             totalSumm = totalSumm + sales[i];
 
@@ -42,7 +42,7 @@ public class StatsService {
 
 
     public int amountMonthsBelow(int[] sales) {
-        int amountMonthsBelow = averageSumm(sales);
+        long amountMonthsBelow = averageSumm(sales);
         int month = 0;
         for (int i = 0; i < sales.length; i++) {
             if (sales[i] < amountMonthsBelow) {
@@ -53,17 +53,17 @@ public class StatsService {
         return month;
     }
 
-        public int amountMonthsUnder ( int[] sales){
-            int amountMonthsUnder = averageSumm(sales);
-            int month = 0;
-            for (int i = 0; i < sales.length; i++) {
-                if (sales[i] > amountMonthsUnder) {
-                    month++;
-                }
+    public int amountMonthsUnder(int[] sales) {
+        long amountMonthsUnder = averageSumm(sales);
+        int month = 0;
+        for (int i = 0; i < sales.length; i++) {
+            if (sales[i] > amountMonthsUnder) {
+                month++;
             }
-            return month;
         }
+        return month;
     }
+}
 
 
 
